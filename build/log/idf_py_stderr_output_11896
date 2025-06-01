@@ -1,0 +1,1265 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM8 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM8 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42021f87: esp_wifi_scan_get_ap_records at ??:?
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42021f84: esp_wifi_scan_get_ap_records at ??:?
+0x420095bf: my_wifi_event_cb at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/main/hello_world_main.c:47
+0x42009671: wifi_drv_event_handler at C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:66
+0x42079cdd: handler_execute at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:135
+0x42079922: esp_event_loop_run at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:584
+0x420799fd: esp_event_loop_run_task at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/esp_event.c:105
+0x4037ce85: vPortTaskWrapper at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40375a50: esp_restart_noos at C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0m

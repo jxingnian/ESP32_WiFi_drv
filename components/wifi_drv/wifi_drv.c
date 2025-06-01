@@ -2,7 +2,7 @@
  * @Author: xingnian j_xingnian@163.com
  * @Date: 2025-05-31 19:55:32
  * @LastEditors: 星年 && j_xingnian@163.com
- * @LastEditTime: 2025-06-01 13:06:44
+ * @LastEditTime: 2025-06-01 16:49:54
  * @FilePath: \hello_world\components\wifi_drv\wifi_drv.c
  * @Description: WiFi 驱动实现，包含初始化、连接、扫描、NVS存储等功能
  *
@@ -64,6 +64,13 @@ static void event_handler(void* arg, esp_event_base_t event_base,
     // STA模式启动事件
     if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
         ESP_LOGI(TAG, "WIFI_EVENT_STA_START");
+        s_wifi_started = true;
+        // 设置WiFi已启动事件位
+        xEventGroupSetBits(s_wifi_event_group, WIFI_STARTED_BIT);
+    }
+    // AP模式启动事件
+    else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_AP_START) {
+        ESP_LOGI(TAG, "WIFI_EVENT_AP_START");
         s_wifi_started = true;
         // 设置WiFi已启动事件位
         xEventGroupSetBits(s_wifi_event_group, WIFI_STARTED_BIT);
@@ -137,7 +144,8 @@ esp_err_t wifi_drv_init(void)
     // 创建默认STA网络接口
     esp_netif_t *sta_netif = esp_netif_create_default_wifi_sta();
     assert(sta_netif);
-
+    sta_netif = esp_netif_create_default_wifi_ap();
+    assert(sta_netif);
     // 注册WiFi事件处理器（所有WiFi事件）
     ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
                     ESP_EVENT_ANY_ID,
@@ -186,8 +194,14 @@ static esp_err_t wifi_drv_start(void)
     // 启动WiFi
     err = esp_wifi_start();
     if (err == ESP_OK) {
-        // 等待WiFi启动事件（最长5秒）
-        EventBits_t bits = xEventGroupWaitBits(s_wifi_event_group, WIFI_STARTED_BIT, pdTRUE, pdFALSE, pdMS_TO_TICKS(5000));
+        // 等待WiFi启动事件（最长10秒，兼容AP/STA/APSTA）
+        EventBits_t bits = xEventGroupWaitBits(
+                               s_wifi_event_group,
+                               WIFI_STARTED_BIT,
+                               pdTRUE,   // 清除
+                               pdFALSE,  // 任一
+                               pdMS_TO_TICKS(10000)
+                           );
         if (!(bits & WIFI_STARTED_BIT)) {
             ESP_LOGE(TAG, "WiFi start timeout");
             return ESP_ERR_TIMEOUT;
@@ -225,14 +239,15 @@ esp_err_t wifi_drv_stop(void)
 /**
  * @brief 连接到指定WiFi
  *
- * 设置STA模式并连接到指定的SSID和密码的AP。
+ * 设置指定WiFi模式并连接到指定的SSID和密码的AP。
  * 阻塞等待连接结果（成功/失败/超时）。
  *
  * @param ssid      目标AP的SSID
  * @param password  目标AP的密码（可为NULL）
+ * @param mode      WiFi模式（如WIFI_MODE_STA、WIFI_MODE_APSTA等）
  * @return esp_err_t
  */
-esp_err_t wifi_drv_connect(const char *ssid, const char *password)
+esp_err_t wifi_drv_connect(const char *ssid, const char *password, wifi_mode_t mode)
 {
     esp_err_t err = ESP_OK;
     // 检查SSID有效性
@@ -249,8 +264,8 @@ esp_err_t wifi_drv_connect(const char *ssid, const char *password)
     // 进入临界区
     xSemaphoreTake(s_wifi_mutex, portMAX_DELAY);
 
-    // 设置为STA模式
-    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+    // 设置为指定WiFi模式
+    ESP_ERROR_CHECK(esp_wifi_set_mode(mode));
 
     // 配置WiFi参数
     wifi_config_t wifi_config = { 0 };
@@ -270,8 +285,6 @@ esp_err_t wifi_drv_connect(const char *ssid, const char *password)
     // 清除连接相关事件位
     xEventGroupClearBits(s_wifi_event_group, WIFI_CONNECTED_BIT | WIFI_FAIL_BIT);
 
-    // 重置重试次数
-    s_retry_num = 0;
     // 发起连接
     ESP_ERROR_CHECK(esp_wifi_connect());
 
@@ -327,8 +340,6 @@ esp_err_t wifi_drv_disconnect(void)
             ESP_LOGW(TAG, "WiFi disconnect timeout");
         }
     }
-    // 关闭WiFi
-    ESP_ERROR_CHECK(wifi_drv_stop());
     xSemaphoreGive(s_wifi_mutex);
     return err;
 }
@@ -357,7 +368,7 @@ esp_err_t wifi_drv_scan(wifi_ap_record_t **ap_list, uint16_t *ap_num)
         }
     }
     // 设置为STA模式
-    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_APSTA));
     // 进入临界区
     xSemaphoreTake(s_wifi_mutex, portMAX_DELAY);
     // 启动WiFi
@@ -436,6 +447,56 @@ esp_err_t wifi_drv_set_mode(wifi_mode_t mode)
 }
 
 /**
+ * @brief 配置AP热点信息并启动APSTA模式
+ *
+ * @param ssid          AP名称
+ * @param password      AP密码（8位及以上，若为空则为开放模式）
+ * @param channel       信道（1~13）
+ * @param max_connection 最大连接数（1~10）
+ * @return esp_err_t
+ */
+esp_err_t wifi_drv_config_apsta(const char *ssid, const char *password, uint8_t channel, uint8_t max_connection)
+{
+    esp_err_t err = ESP_OK;
+    if (!ssid || strlen(ssid) == 0) return ESP_ERR_INVALID_ARG;
+
+    // 确保WiFi初始化
+    if (!s_wifi_inited) {
+        err = wifi_drv_init();
+        if (err != ESP_OK) return err;
+    }
+
+    // 进入临界区
+    xSemaphoreTake(s_wifi_mutex, portMAX_DELAY);
+
+    // 设置为APSTA模式
+    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_APSTA));
+
+
+    // 配置AP参数
+    wifi_config_t ap_config = {0};
+    strlcpy((char *)ap_config.ap.ssid, ssid, sizeof(ap_config.ap.ssid));
+    ap_config.ap.ssid_len = strlen(ssid);
+    if (password && strlen(password) >= 8) {
+        strlcpy((char *)ap_config.ap.password, password, sizeof(ap_config.ap.password));
+        ap_config.ap.authmode = WIFI_AUTH_WPA_WPA2_PSK;
+    } else {
+        ap_config.ap.password[0] = 0;
+        ap_config.ap.authmode = WIFI_AUTH_OPEN;
+    }
+    ap_config.ap.channel = channel;
+    ap_config.ap.max_connection = max_connection;
+    ap_config.ap.ssid_hidden = 0;
+
+    ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_AP, &ap_config));
+
+    // 启动WiFi（如未启动）
+    err = wifi_drv_start();
+    xSemaphoreGive(s_wifi_mutex);
+    return err;
+}
+
+/**
  * @brief 保存AP信息到NVS
  *
  * 将AP信息结构体保存到NVS中，便于下次启动时恢复连接。
@@ -465,17 +526,23 @@ esp_err_t wifi_drv_save_ap(const wifi_ap_info_t *ap_info)
  * @param ap_info   输出参数，读取到的AP信息
  * @return esp_err_t
  */
-esp_err_t wifi_drv_get_ap(wifi_ap_info_t *ap_info)
+int wifi_drv_get_all_ap(wifi_ap_info_t *list, int max_num)
 {
+    if (!list || max_num <= 0) return 0;
     nvs_handle_t nvs_handle;
-    // 打开NVS命名空间，只读模式
     esp_err_t err = nvs_open(WIFI_NVS_NAMESPACE, NVS_READONLY, &nvs_handle);
-    if (err != ESP_OK) return err;
-    size_t len = sizeof(wifi_ap_info_t);
-    // 读取AP信息（blob）
-    err = nvs_get_blob(nvs_handle, WIFI_NVS_KEY, ap_info, &len);
+    if (err != ESP_OK) return 0;
+    wifi_ap_info_t tmp[WIFI_AP_MAX_NUM] = {0};
+    size_t len = sizeof(tmp);
+    int count = 0;
+    err = nvs_get_blob(nvs_handle, WIFI_NVS_KEY, tmp, &len);
+    if (err == ESP_OK) {
+        count = len / sizeof(wifi_ap_info_t);
+        if (count > max_num) count = max_num;
+        memcpy(list, tmp, count * sizeof(wifi_ap_info_t));
+    }
     nvs_close(nvs_handle);
-    return err;
+    return count;
 }
 
 /**

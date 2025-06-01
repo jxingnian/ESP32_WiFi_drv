@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ESP32 春风配网</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        body {
+            background: #f5f7fa;
+            font-family: 'Segoe UI', 'PingFang SC', Arial, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 440px;
+            margin: 2em auto;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 24px #0002;
+            padding: 2em 2em 1.5em 2em;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2d8cf0;
+            margin-bottom: 1.2em;
+            letter-spacing: 1px;
+        }
+
+        .status {
+            text-align: center;
+            margin-bottom: 1.2em;
+            font-size: 1.1em;
+        }
+
+        .btn {
+            background: #2d8cf0;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 0.5em 1.2em;
+            font-size: 1em;
+            cursor: pointer;
+            margin: 0.5em 0.2em 0.5em 0;
+            transition: background 0.2s;
+        }
+
+        .btn:active {
+            background: #1a6fd3;
+        }
+
+        .btn[disabled] {
+            background: #b0c4de !important;
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+
+        .btn-del {
+            background: #f56c6c;
+            margin-left: 0.5em;
+        }
+
+        .btn-del:active {
+            background: #c0392b;
+        }
+
+        .btn-disconnect {
+            background: #f39c12;
+            margin-left: 0.5em;
+        }
+
+        .btn-disconnect:active {
+            background: #d35400;
+        }
+
+        .btn-connect {
+            background: #67c23a;
+            margin-left: 0.5em;
+        }
+
+        .btn-connect:active {
+            background: #409e2b;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 0.5em;
+            margin: 0.3em 0 1em 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        .msg {
+            text-align: center;
+            color: #f56c6c;
+            min-height: 1.5em;
+        }
+
+        .success {
+            color: #67c23a;
+        }
+
+        .saved-list {
+            margin: 1.2em 0 0.5em 0;
+            background: #f8fafd;
+            border-radius: 8px;
+            padding: 0.7em 1em 0.5em 1em;
+            box-shadow: 0 1px 4px #0001;
+        }
+
+        .saved-title {
+            font-weight: bold;
+            color: #2d8cf0;
+            margin-bottom: 0.3em;
+        }
+
+        .saved-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.3em 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .saved-ssid {
+            font-weight: 500;
+            color: #333;
+            word-break: break-all;
+        }
+
+        .saved-actions {
+            display: flex;
+            gap: 0.3em;
+        }
+
+        .form-group {
+            margin-bottom: 1.2em;
+        }
+
+        label {
+            font-size: 1em;
+            color: #333;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                margin: 0.5em;
+                padding: 1em 0.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>ESP32 春风WiFi配网</h2>
+        <div class="status" id="status">加载中...</div>
+        <div id="savedList" class="saved-list" style="display:none;">
+            <div class="saved-title">已保存WiFi：</div>
+            <div id="savedListItems"></div>
+        </div>
+        <form id="wifiForm" autocomplete="off">
+            <div class="form-group">
+                <label>选择WiFi:
+                    <select id="ssidSelect" required>
+                        <option value="">-- 请选择 --</option>
+                    </select>
+                    <button class="btn" type="button" id="scanBtn" onclick="fetchScan()">扫描附近WiFi</button>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>密码:
+                    <input type="password" id="password" placeholder="如无密码可留空">
+                </label>
+            </div>
+            <div style="text-align:center;">
+                <button class="btn" type="submit" id="connectBtn">连接WiFi</button>
+            </div>
+        </form>
+        <div class="msg" id="msg"></div>
+    </div>
+    <script>
+        let apList = [];
+        let savedList = [];
+
+        function updateStatus(data) {
+            let html = '';
+            if (data.connected) {
+                html = `<span class="success">已连接: <b>${data.connected_ssid}</b> (${data.ip})</span>
+                        <button class="btn btn-disconnect" onclick="disconnectWifi()">断开WiFi</button>`;
+            } else {
+                html = `<span>未连接WiFi</span>`;
+            }
+            document.getElementById('status').innerHTML = html;
+
+            // 显示已保存WiFi列表
+            savedList = data.saved_list || [];
+            let savedDiv = document.getElementById('savedList');
+            let savedItems = document.getElementById('savedListItems');
+            if (savedList.length > 0) {
+                savedDiv.style.display = '';
+                savedItems.innerHTML = savedList.map(ssid =>
+                    `<div class="saved-item">
+                        <span class="saved-ssid">${ssid}</span>
+                        <span class="saved-actions">
+                            <button class="btn btn-connect" onclick="connectSaved('${ssid}')">连接</button>
+                            <button class="btn btn-del" onclick="deleteSaved('${ssid}')">删除</button>
+                        </span>
+                    </div>`
+                ).join('');
+            } else {
+                savedDiv.style.display = 'none';
+                savedItems.innerHTML = '';
+            }
+        }
+
+        function updateWifiList(list) {
+            apList = list;
+            let sel = document.getElementById('ssidSelect');
+            sel.innerHTML = `<option value="">-- 请选择 --</option>`;
+            list.forEach(ap => {
+                let opt = document.createElement('option');
+                opt.value = ap.ssid;
+                opt.text = `${ap.ssid} (${ap.rssi}dBm)${ap.authmode !== 0 ? ' 🔒' : ''}`;
+                sel.appendChild(opt);
+            });
+        }
+
+        function showMsg(msg, ok) {
+            let el = document.getElementById('msg');
+            el.innerText = msg;
+            el.className = 'msg' + (ok ? ' success' : '');
+            setTimeout(() => { el.innerText = ''; }, 3000);
+        }
+
+        async function fetchStatus() {
+            let resp = await fetch('/api/status');
+            let data = await resp.json();
+            updateStatus(data);
+        }
+
+        async function fetchScan() {
+            let btn = document.getElementById('scanBtn');
+            if (btn) {
+                btn.disabled = true;
+                btn.innerText = "正在扫描...";
+                showMsg("正在扫描附近WiFi...", true);
+            }
+            try {
+                let resp = await fetch('/api/scan');
+                let data = await resp.json();
+                updateWifiList(data.ap_list || []);
+                showMsg("WiFi扫描完成", true);
+            } catch (e) {
+                showMsg("WiFi扫描失败，请重试");
+            }
+            if (btn) {
+                btn.disabled = false;
+                btn.innerText = "扫描附近WiFi";
+            }
+        }
+
+        async function deleteSaved(ssid) {
+            if (!confirm(`确定要删除已保存的WiFi: ${ssid} 吗？`)) return;
+            let resp = await fetch('/api/saved', {
+                method: 'DELETE',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ ssid })
+            });
+            let text = await resp.text();
+            showMsg(text, true);
+            fetchStatus();
+        }
+
+        async function connectSaved(ssid) {
+            if (!ssid) {
+                showMsg('SSID无效', false);
+                return;
+            }
+            let connectBtns = document.querySelectorAll('.btn-connect');
+            connectBtns.forEach(btn => btn.disabled = true);
+            showMsg(`正在连接已保存WiFi: ${ssid}，请稍候...`, true);
+            try {
+                let resp = await fetch('/api/connect_saved', { // 改为新API
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ ssid }) // 只传ssid
+                });
+                let text = await resp.text();
+                showMsg(text, text.includes('成功'));
+                fetchStatus();
+            } catch (e) {
+                showMsg("连接WiFi失败，请重试", false);
+            }
+            connectBtns.forEach(btn => btn.disabled = false);
+        }
+
+        async function disconnectWifi() {
+            if (!confirm("确定要断开当前WiFi连接吗？")) return;
+            let resp = await fetch('/api/disconnect', {
+                method: 'POST'
+            });
+            let text = await resp.text();
+            showMsg(text, text.includes('成功') || text.includes('断开'));
+            fetchStatus();
+        }
+
+        document.getElementById('wifiForm').onsubmit = async function (e) {
+            e.preventDefault();
+            let ssid = document.getElementById('ssidSelect').value;
+            let password = document.getElementById('password').value;
+            let connectBtn = document.getElementById('connectBtn');
+            if (!ssid) { showMsg('请选择WiFi', false); return; }
+            connectBtn.disabled = true;
+            let oldText = connectBtn.innerText;
+            connectBtn.innerText = "正在连接...";
+            showMsg("正在连接WiFi，请稍候...", true);
+            try {
+                let resp = await fetch('/api/connect', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ ssid, password })
+                });
+                let text = await resp.text();
+                showMsg(text, text.includes('成功'));
+                fetchStatus();
+            } catch (e) {
+                showMsg("连接WiFi失败，请重试", false);
+            }
+            connectBtn.disabled = false;
+            connectBtn.innerText = oldText;
+        };
+
+        window.onload = async function () {
+            await fetchStatus();
+            await fetchScan(); // 只在页面加载时自动扫描一次
+        };
+    </script>
+</body>
+
+</html>

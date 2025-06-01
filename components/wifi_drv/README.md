@@ -1,56 +1,68 @@
-# WiFi 驱动组件说明
+<!--
+ * @Author: xingnian j_xingnian@163.com
+ * @Date: 2025-05-31 19:55:32
+ * @LastEditors: 星年 && j_xingnian@163.com
+ * @LastEditTime: 2025-06-01 16:49:34
+ * @FilePath: \hello_world\components\wifi_drv\README.md
+ * @Description: wifi_drv
+ * 
+ * Copyright (c) 2025 by ${git_name_email}, All Rights Reserved. 
+-->
+# wifi_drv 组件说明
 
-本组件封装了 ESP32 WiFi 常用操作，接口简洁，便于集成到各类项目中。
+## 功能简介
 
-## 提供的主要接口
+`wifi_drv` 组件封装了 ESP32 WiFi 的常用操作，包括初始化、连接、断开、扫描、NVS 多组 WiFi 信息的保存/获取/删除等，便于上层应用调用。
 
-- `wifi_drv_init()`：初始化 WiFi 驱动（需先初始化 NVS）。
-- `wifi_drv_deinit()`：反初始化 WiFi 驱动。
-- `wifi_drv_connect(ssid, password)`：连接指定 WiFi（STA模式）。
-- `wifi_drv_disconnect()`：断开当前 WiFi 连接。
-- `wifi_drv_scan(&ap_list, &ap_num)`：扫描周围 WiFi，返回AP列表（需手动free）。
-- `wifi_drv_set_mode(mode)`：切换 WiFi 工作模式（STA/AP/STA+AP/NULL）。
-- `wifi_drv_save_ap(&ap_info)`：保存 WiFi 信息到 NVS。
-- `wifi_drv_get_ap(&ap_info)`：从 NVS 获取已保存的 WiFi 信息。
-- `wifi_drv_erase_ap()`：删除 NVS 中保存的 WiFi 信息。
+## 主要接口
 
-## 使用说明
+- `esp_err_t wifi_drv_init(void);`  
+  初始化 WiFi 驱动（需先初始化 NVS）
 
-1. **初始化**
-   ```c
-   nvs_flash_init();
-   wifi_drv_init();
-   ```
+- `esp_err_t wifi_drv_connect(const char *ssid, const char *password, wifi_mode_t mode);`  
+  连接指定 WiFi（支持 STA/APSTA 模式）
 
-2. **连接 WiFi**
-   ```c
-   wifi_drv_connect("your_ssid", "your_password");
-   ```
+- `esp_err_t wifi_drv_disconnect(void);`  
+  断开当前 WiFi 连接
 
-3. **扫描 WiFi**
-   ```c
-   wifi_ap_record_t *ap_list = NULL;
-   uint16_t ap_num = 0;
-   wifi_drv_scan(&ap_list, &ap_num);
-   // 遍历 ap_list[0..ap_num-1]
-   free(ap_list);
-   ```
+- `esp_err_t wifi_drv_scan(wifi_ap_record_t **ap_list, uint16_t *ap_num);`  
+  扫描附近 WiFi，返回 AP 列表（需手动 free）
 
-4. **保存/获取/删除 WiFi 配置**
-   ```c
-   wifi_ap_info_t info = { .ssid = "xxx", .password = "yyy" };
-   wifi_drv_save_ap(&info);
-   wifi_drv_get_ap(&info);
-   wifi_drv_erase_ap();
-   ```
+- `esp_err_t wifi_drv_set_mode(wifi_mode_t mode);`  
+  设置 WiFi 工作模式
 
-5. **反初始化**
-   ```c
-   wifi_drv_deinit();
-   ```
+- `esp_err_t wifi_drv_config_apsta(const char *ssid, const char *password, uint8_t channel, uint8_t max_connection);`  
+  配置 APSTA 模式下的 AP 信息
+
+- `esp_err_t wifi_drv_save_ap(const wifi_ap_info_t *ap_info);`  
+  保存一组 WiFi 信息到 NVS（最多 5 组，自动去重/覆盖）
+
+- `int wifi_drv_get_all_ap(wifi_ap_info_t *list, int max_num);`  
+  获取所有已保存的 WiFi 信息
+
+- `esp_err_t wifi_drv_erase_ap(void);`  
+  删除所有已保存的 WiFi 信息
+
+## 典型用法
+
+```c
+nvs_flash_init();
+wifi_drv_init();
+
+wifi_ap_info_t info = { .ssid = "xxx", .password = "yyy" };
+wifi_drv_save_ap(&info);
+
+wifi_ap_info_t list[5];
+int num = wifi_drv_get_all_ap(list, 5);
+
+wifi_drv_connect(list[0].ssid, list[0].password, WIFI_MODE_STA);
+
+wifi_drv_disconnect();
+wifi_drv_erase_ap();
+```
 
 ## 注意事项
 
 - 使用前需先初始化 NVS（`nvs_flash_init()`）。
 - 扫描结果需手动释放内存。
-- NVS 只保存一个 WiFi 配置，如需多组请自行扩展。
+- NVS 最多保存 5 组 WiFi 信息，超出会自动覆盖最早的。

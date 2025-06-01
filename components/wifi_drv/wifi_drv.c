@@ -2,7 +2,7 @@
  * @Author: xingnian j_xingnian@163.com
  * @Date: 2025-05-31 19:55:32
  * @LastEditors: 星年 && j_xingnian@163.com
- * @LastEditTime: 2025-06-01 12:53:12
+ * @LastEditTime: 2025-06-01 13:06:44
  * @FilePath: \hello_world\components\wifi_drv\wifi_drv.c
  * @Description: WiFi 驱动实现，包含初始化、连接、扫描、NVS存储等功能
  *
@@ -40,10 +40,6 @@ static EventGroupHandle_t s_wifi_event_group = NULL;
 #define WIFI_STARTED_BIT   BIT2      // WiFi已启动
 #define WIFI_SCAN_DONE_BIT BIT3      // 扫描完成
 
-// WiFi重试次数
-static int s_retry_num = 0;
-#define WIFI_MAXIMUM_RETRY 5         // 最大重试次数
-
 // 事件处理器实例句柄
 static esp_event_handler_instance_t instance_any_id = NULL;
 static esp_event_handler_instance_t instance_got_ip = NULL;
@@ -75,21 +71,12 @@ static void event_handler(void* arg, esp_event_base_t event_base,
     // STA断开事件
     else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
         ESP_LOGI(TAG, "WIFI_EVENT_STA_DISCONNECTED");
-        // // 若重试次数未达上限，自动重连
-        // if (s_retry_num < WIFI_MAXIMUM_RETRY) {
-        //     esp_wifi_connect();
-        //     s_retry_num++;
-        //     ESP_LOGI(TAG, "retry to connect to the AP");
-        // } else {
-        //     // 超过最大重试次数，设置连接失败事件位
         xEventGroupSetBits(s_wifi_event_group, WIFI_FAIL_BIT);
-        // }
     }
     // STA获取到IP事件
     else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
         ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
         ESP_LOGI(TAG, "got ip:" IPSTR, IP2STR(&event->ip_info.ip));
-        s_retry_num = 0;
         // 设置已连接事件位
         xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
     }
@@ -220,8 +207,6 @@ static esp_err_t wifi_drv_start(void)
 esp_err_t wifi_drv_stop(void)
 {
     esp_err_t err = ESP_OK;
-    // // 进入临界区
-    // xSemaphoreTake(s_wifi_mutex, portMAX_DELAY);
     if (!s_wifi_started) {
         // 未启动，直接返回
         xSemaphoreGive(s_wifi_mutex);
@@ -234,7 +219,6 @@ esp_err_t wifi_drv_stop(void)
         // 清除启动、连接、失败事件位
         xEventGroupClearBits(s_wifi_event_group, WIFI_STARTED_BIT | WIFI_CONNECTED_BIT | WIFI_FAIL_BIT);
     }
-    // xSemaphoreGive(s_wifi_mutex);
     return err;
 }
 

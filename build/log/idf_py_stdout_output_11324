@@ -1,84 +1,81 @@
-ESP-ROM:esp32s3-20210327
-Build:Mar 27 2021
-rst:0x1 (POWERON),boot:0x28 (SPI_FAST_FLASH_BOOT)
-SPIWP:0xee
-mode:DIO, clock div:1
-load:0x3fce2810,len:0x178c
-load:0x403c8700,len:0x4
-load:0x403c8704,len:0xcb8
-load:0x403cb700,len:0x2db0
-entry 0x403c8914
-[0;32mI (27) boot: ESP-IDF v5.3-dirty 2nd stage bootloader[0m
-[0;32mI (27) boot: compile time May 31 2025 20:42:14[0m
-[0;32mI (27) boot: Multicore bootloader[0m
-[0;32mI (30) boot: chip revision: v0.2[0m
-[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
-[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
-[0;32mI (44) boot.esp32s3: SPI Flash Size : 16MB[0m
-[0;32mI (48) boot: Enabling RNG early entropy source...[0m
-[0;32mI (54) boot: Partition Table:[0m
-[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
-[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00010000[0m
-[0;32mI (72) boot:  1 phy_init         RF data          01 01 00019000 00001000[0m
-[0;32mI (80) boot:  2 factory          factory app      00 00 00020000 00300000[0m
-[0;32mI (87) boot:  3 storage          Unknown data     01 82 00320000 00200000[0m
-[0;32mI (95) boot: End of partition table[0m
-[0;32mI (99) esp_image: segment 0: paddr=00020020 vaddr=3c080020 size=1f590h (128400) map[0m
-[0;32mI (130) esp_image: segment 1: paddr=0003f5b8 vaddr=3fc99100 size=00a60h (  2656) load[0m
-[0;32mI (131) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=7d918h (514328) map[0m
-[0;32mI (228) esp_image: segment 3: paddr=000bd940 vaddr=3fc99b60 size=03e54h ( 15956) load[0m
-[0;32mI (232) esp_image: segment 4: paddr=000c179c vaddr=40374000 size=150c4h ( 86212) load[0m
-[0;32mI (262) boot: Loaded app from partition at offset 0x20000[0m
-[0;32mI (262) boot: Disabling RNG early entropy source...[0m
-[0;32mI (273) cpu_start: Multicore app[0m
-[0;32mI (283) cpu_start: Pro cpu start user code[0m
-[0;32mI (283) cpu_start: cpu freq: 160000000 Hz[0m
-[0;32mI (283) app_init: Application information:[0m
-[0;32mI (286) app_init: Project name:     hello_world[0m
-[0;32mI (291) app_init: App version:      1[0m
-[0;32mI (295) app_init: Compile time:     May 31 2025 20:41:57[0m
-[0;32mI (301) app_init: ELF file SHA256:  e97208899...[0m
-[0;32mI (307) app_init: ESP-IDF:          v5.3-dirty[0m
-[0;32mI (312) efuse_init: Min chip rev:     v0.0[0m
-[0;32mI (316) efuse_init: Max chip rev:     v0.99 [0m
-[0;32mI (321) efuse_init: Chip rev:         v0.2[0m
-[0;32mI (326) heap_init: Initializing. RAM available for dynamic allocation:[0m
-[0;32mI (334) heap_init: At 3FCA1560 len 000481B0 (288 KiB): RAM[0m
-[0;32mI (340) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
-[0;32mI (346) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
-[0;32mI (352) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
-[0;32mI (359) spi_flash: detected chip: boya[0m
-[0;32mI (362) spi_flash: flash io: dio[0m
-[0;32mI (367) sleep: Configure to isolate all GPIO pins in sleep state[0m
-[0;32mI (373) sleep: Enable automatic switching of GPIO sleep configuration[0m
-[0;32mI (381) main_task: Started on CPU0[0m
-[0;32mI (411) main_task: Calling app_main()[0m
-当前任务剩余最小栈空间: 6524 字节
-[0;32mI (431) pp: pp rom version: e7ae62f[0m
-[0;32mI (431) net80211: net80211 rom version: e7ae62f[0m
-[0;32mI (451) wifi:wifi driver task: 3fcacbe0, prio:23, stack:6656, core=0[0m
-[0;32mI (461) wifi:wifi firmware version: 0caa81945[0m
-[0;32mI (461) wifi:wifi certification version: v7.0[0m
-[0;32mI (461) wifi:config NVS flash: enabled[0m
-[0;32mI (461) wifi:config nano formating: disabled[0m
-[0;32mI (461) wifi:Init data frame dynamic rx buffer num: 32[0m
-[0;32mI (471) wifi:Init static rx mgmt buffer num: 5[0m
-[0;32mI (471) wifi:Init management short buffer num: 32[0m
-[0;32mI (481) wifi:Init dynamic tx buffer num: 32[0m
-[0;32mI (481) wifi:Init static tx FG buffer num: 2[0m
-[0;32mI (491) wifi:Init static rx buffer size: 1600[0m
-[0;32mI (491) wifi:Init static rx buffer num: 10[0m
-[0;32mI (491) wifi:Init dynamic rx buffer num: 32[0m
-[0;32mI (501) wifi_init: rx ba win: 6[0m
-[0;32mI (501) wifi_init: accept mbox: 6[0m
-[0;32mI (511) wifi_init: tcpip mbox: 32[0m
-[0;32mI (511) wifi_init: udp mbox: 6[0m
-[0;32mI (511) wifi_init: tcp mbox: 6[0m
-[0;32mI (521) wifi_init: tcp tx win: 5760[0m
-[0;32mI (521) wifi_init: tcp rx win: 5760[0m
-[0;32mI (521) wifi_init: tcp mss: 1440[0m
-[0;32mI (531) wifi_init: WiFi IRAM OP enabled[0m
-[0;32mI (531) wifi_init: WiFi RX IRAM OP enabled[0m
-[0;31mE (541) wifi_drv: WiFi扫描启动失败: ESP_ERR_WIFI_NOT_STARTED[0m
-[0;32mI (551) wifi:Deinit lldesc rx mblock:10[0m
-[0;32mI (561) main_task: Returned from app_main()[0m
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\Administrator\Desktop\XingNian\esp32_project\chunfeng\hello_world\build\bootloader\esp-idf\esptool_py && C:\Espressif5.3\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif5.3/frameworks/esp-idf-v5.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5260 bytes. 0x2da0 bytes (36%) free.
+[2/8] Building C object esp-idf/wifi_drv/CMakeFiles/__idf_wifi_drv.dir/wifi_drv.c.obj
+[3/8] Linking C static library esp-idf\wifi_drv\libwifi_drv.a
+[4/8] Generating ld/sections.ld
+info: INFO: Symbol IDF_TARGET_LINUX defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif5.3\frameworks\esp-idf-v5.3\Kconfig:162
+    C:\Espressif5.3\frameworks\esp-idf-v5.3\Kconfig:78
+[5/8] Linking CXX executable hello_world.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/build/hello_world.bin
+[7/8] cmd.exe /C "cd /D C:\Users\Administrator\Desktop\XingNian\esp32_project\chunfeng\hello_world\build\esp-idf\esptool_py && C:\Espressif5.3\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif5.3/frameworks/esp-idf-v5.3/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/build/partition_table/partition-table.bin C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/build/hello_world.bin"
+hello_world.bin binary size 0xbb7a0 bytes. Smallest app partition is 0x300000 bytes. 0x244860 bytes (76%) free.
+[7/8] cmd.exe /C "cd /D C:\Espressif5.3\frameworks\esp-idf-v5.3\components\esptool_py && C:\Espressif5.3\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif5.3/frameworks/esp-idf-v5.3 -D SERIAL_TOOL=C:/Espressif5.3/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/build -P C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esptool_py/run_serial_tool.cmaesptool.py --chip esp32s3 -p COM8 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x20000 hello_world.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM8
+Connecting.....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: cc:ba:97:04:ed:5c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00020000 to 0x000dbfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21088 bytes to 13050...
+Writing at 0x00000000... (100 %)
+Wrote 21088 bytes (13050 compressed) at 0x00000000 in 0.7 seconds (effective 250.5 kbit/s)...
+Hash of data verified.
+Compressed 767904 bytes to 482072...
+Writing at 0x00020000... (3 %)
+Writing at 0x0002d060... (6 %)
+Writing at 0x00034069... (10 %)
+Writing at 0x000390e5... (13 %)
+Writing at 0x00044d86... (16 %)
+Writing at 0x0004ae96... (20 %)
+Writing at 0x00050fac... (23 %)
+Writing at 0x000572ae... (26 %)
+Writing at 0x0005d920... (30 %)
+Writing at 0x00063709... (33 %)
+Writing at 0x000695d6... (36 %)
+Writing at 0x0006fbd8... (40 %)
+Writing at 0x000749bc... (43 %)
+Writing at 0x0007990c... (46 %)
+Writing at 0x0007ec8a... (50 %)
+Writing at 0x00084131... (53 %)
+Writing at 0x00089275... (56 %)
+Writing at 0x0008e4e1... (60 %)
+Writing at 0x00094541... (63 %)
+Writing at 0x00099d91... (66 %)
+Writing at 0x0009f8b0... (70 %)
+Writing at 0x000a5647... (73 %)
+Writing at 0x000aae84... (76 %)
+Writing at 0x000b0b2f... (80 %)
+Writing at 0x000b675b... (83 %)
+Writing at 0x000bbb92... (86 %)
+Writing at 0x000c5a4e... (90 %)
+Writing at 0x000cd280... (93 %)
+Writing at 0x000d35a1... (96 %)
+Writing at 0x000d8cc1... (100 %)
+Wrote 767904 bytes (482072 compressed) at 0x00020000 in 11.1 seconds (effective 551.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 120...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (120 compressed) at 0x00008000 in 0.1 seconds (effective 368.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+ke"

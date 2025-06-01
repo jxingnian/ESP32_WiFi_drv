@@ -1,67 +1,30 @@
-[1/5] cmd.exe /C "cd /D C:\Users\Administrator\Desktop\XingNian\esp32_project\chunfeng\hello_world\build\esp-idf\esptool_py && C:\Espressif5.3\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif5.3/frameworks/esp-idf-v5.3/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/build/partition_table/partition-table.bin C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/build/hello_world.bin"
-hello_world.bin binary size 0xb5bf0 bytes. Smallest app partition is 0x300000 bytes. 0x24a410 bytes (76%) free.
-[2/5] Performing build step for 'bootloader'
-[1/1] cmd.exe /C "cd /D C:\Users\Administrator\Desktop\XingNian\esp32_project\chunfeng\hello_world\build\bootloader\esp-idf\esptool_py && C:\Espressif5.3\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif5.3/frameworks/esp-idf-v5.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/build/bootloader/bootloader.bin"
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\Administrator\Desktop\XingNian\esp32_project\chunfeng\hello_world\build\bootloader\esp-idf\esptool_py && C:\Espressif5.3\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif5.3/frameworks/esp-idf-v5.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/build/bootloader/bootloader.bin"
 Bootloader binary size 0x5260 bytes. 0x2da0 bytes (36%) free.
-[2/3] cmd.exe /C "cd /D C:\Espressif5.3\frameworks\esp-idf-v5.3\components\esptool_py && C:\Espressif5.3\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif5.3/frameworks/esp-idf-v5.3 -D SERIAL_TOOL=C:/Espressif5.3/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esptool_py/esptool/esptool.py;--chip;esp32s3esptool.py --chip esp32s3 -p COM8 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x20000 hello_world.bin 0x8000 partition_table/partition-table.bin
-esptool.py v4.8.1
-Serial port COM8
-Connecting....
-Chip is ESP32-S3 (QFN56) (revision v0.2)
-Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
-Crystal is 40MHz
-MAC: cc:ba:97:04:ed:5c
-Uploading stub...
-Running stub...
-Stub running...
-Changing baud rate to 460800
-Changed.
-Configuring flash size...
-Flash will be erased from 0x00000000 to 0x00005fff...
-Flash will be erased from 0x00020000 to 0x000d5fff...
-Flash will be erased from 0x00008000 to 0x00008fff...
-SHA digest in image updated
-Compressed 21088 bytes to 13050...
-Writing at 0x00000000... (100 %)
-Wrote 21088 bytes (13050 compressed) at 0x00000000 in 0.7 seconds (effective 255.2 kbit/s)...
-Hash of data verified.
-Compressed 744432 bytes to 468039...
-Writing at 0x00020000... (3 %)
-Writing at 0x0002cb9c... (6 %)
-Writing at 0x0003368c... (10 %)
-Writing at 0x00038948... (13 %)
-Writing at 0x00041d1c... (17 %)
-Writing at 0x00047fe3... (20 %)
-Writing at 0x0004e50b... (24 %)
-Writing at 0x0005431a... (27 %)
-Writing at 0x00059ff0... (31 %)
-Writing at 0x00060230... (34 %)
-Writing at 0x0006560e... (37 %)
-Writing at 0x0006a68f... (41 %)
-Writing at 0x0006f6b3... (44 %)
-Writing at 0x00074649... (48 %)
-Writing at 0x000799e5... (51 %)
-Writing at 0x0007f547... (55 %)
-Writing at 0x00084d61... (58 %)
-Writing at 0x0008a99e... (62 %)
-Writing at 0x0009062d... (65 %)
-Writing at 0x00095f64... (68 %)
-Writing at 0x0009bc23... (72 %)
-Writing at 0x000a18f9... (75 %)
-Writing at 0x000a6b55... (79 %)
-Writing at 0x000b0738... (82 %)
-Writing at 0x000b83a3... (86 %)
-Writing at 0x000c025d... (89 %)
-Writing at 0x000c6571... (93 %)
-Writing at 0x000cca81... (96 %)
-Writing at 0x000d25ac... (100 %)
-Wrote 744432 bytes (468039 compressed) at 0x00020000 in 10.8 seconds (effective 549.1 kbit/s)...
-Hash of data verified.
-Compressed 3072 bytes to 120...
-Writing at 0x00008000... (100 %)
-Wrote 3072 bytes (120 compressed) at 0x00008000 in 0.1 seconds (effective 393.3 kbit/s)...
-Hash of data verified.
-
-Leaving...
-Hard resetting via RTS pin...
- -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/build -P C:/Espressif5.3/frameworks/esp-idf-v5.3/components/esptool_py/run_serial_tool.cmake"
+[2/8] Building C object esp-idf/wifi_drv/CMakeFiles/__idf_wifi_drv.dir/wifi_drv.c.obj
+FAILED: esp-idf/wifi_drv/CMakeFiles/__idf_wifi_drv.dir/wifi_drv.c.obj 
+ccache C:\Espressif5.3\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32s3-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.3-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/build/config -IC:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/newlib/platform_include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/config/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/config/include/freertos -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/config/xtensa/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/freertos/esp_additions/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_hw_support/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_hw_support/include/soc -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_hw_support/include/soc/esp32s3 -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_hw_support/dma/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_hw_support/ldo/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_hw_support/port/esp32s3/. -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_hw_support/port/esp32s3/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/heap/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/log/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/soc/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/soc/esp32s3 -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/soc/esp32s3/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/hal/platform_port/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/hal/esp32s3/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/hal/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_rom/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_rom/include/esp32s3 -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_rom/esp32s3 -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_common/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/soc -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_system/port/include/private -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/xtensa/esp32s3/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/xtensa/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/xtensa/deprecated_include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/lwip/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/lwip/include/apps -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/lwip/include/apps/sntp -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/lwip/lwip/src/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/lwip/port/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/lwip/port/freertos/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/lwip/port/esp32xx/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/lwip/port/esp32xx/include/arch -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/lwip/port/esp32xx/include/sys -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_wifi/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_wifi/wifi_apps/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_wifi/wifi_apps/nan_app/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_wifi/include/local -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_event/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_phy/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_phy/esp32s3/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_netif/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/nvs_flash/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/spi_flash/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_partition/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/driver/deprecated -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/driver/i2c/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/driver/touch_sensor/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/driver/twai/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/driver/touch_sensor/esp32s3/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_pm/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_ringbuf/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_gpio/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_pcnt/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_gptimer/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_spi/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_mcpwm/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_ana_cmpr/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_i2s/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_sdmmc/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/sdmmc/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_sdspi/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_sdio/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_dac/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_rmt/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_tsens/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_sdm/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_i2c/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_uart/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/vfs/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_ledc/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_parlio/include -IC:/Espressif5.3/frameworks/esp-idf-v5.3/components/esp_driver_usb_serial_jtag/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world=. -fmacro-prefix-map=C:/Espressif5.3/frameworks/esp-idf-v5.3=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/wifi_drv/CMakeFiles/__idf_wifi_drv.dir/wifi_drv.c.obj -MF esp-idf\wifi_drv\CMakeFiles\__idf_wifi_drv.dir\wifi_drv.c.obj.d -o esp-idf/wifi_drv/CMakeFiles/__idf_wifi_drv.dir/wifi_drv.c.obj -c C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c
+C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c: In function 'wifi_drv_connect':
+C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:111:16: error: 'wifi_config_t' has no member named 'ssid'
+  111 |     wifi_config.ssid = "HOME",           // 设置SSID
+      |                ^
+C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:112:16: error: 'wifi_config_t' has no member named 'password'
+  112 |     wifi_config.password = "15975324685",       // 设置密码
+      |                ^
+C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:111:30: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+  111 |     wifi_config.ssid = "HOME",           // 设置SSID
+      |                              ^
+C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:121:5: error: expected expression before 'return'
+  121 |     return true;
+      |     ^~~~~~
+C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:112:41: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+  112 |     wifi_config.password = "15975324685",       // 设置密码
+      |                                         ^
+C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:110:19: warning: variable 'wifi_config' set but not used [-Wunused-but-set-variable]
+  110 |     wifi_config_t wifi_config = {0}; // 初始化WiFi配置结构体
+      |                   ^~~~~~~~~~~
+C:/Users/Administrator/Desktop/XingNian/esp32_project/chunfeng/hello_world/components/wifi_drv/wifi_drv.c:122:1: error: control reaches end of non-void function [-Werror=return-type]
+  122 | }
+      | ^
+cc1.exe: some warnings being treated as errors
+ninja: build stopped: subcommand failed.

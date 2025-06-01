@@ -2,7 +2,7 @@
  * @Author: xingnian j_xingnian@163.com
  * @Date: 2025-05-31 19:55:32
  * @LastEditors: 星年 && j_xingnian@163.com
- * @LastEditTime: 2025-06-01 09:54:09
+ * @LastEditTime: 2025-06-01 13:03:04
  * @FilePath: \hello_world\components\wifi_drv\wifi_drv.h
  * @Description:WiFi 驱动头文件
  *
@@ -26,9 +26,6 @@ typedef struct {
 // 初始化WiFi（STA+AP模式均可用）
 esp_err_t wifi_drv_init(void);
 
-// 反初始化WiFi
-esp_err_t wifi_drv_deinit(void);
-
 // 连接指定WiFi（STA模式）
 esp_err_t wifi_drv_connect(const char *ssid, const char *password);
 
@@ -38,7 +35,7 @@ esp_err_t wifi_drv_disconnect(void);
 // 扫描WiFi，返回AP列表和数量（需手动free）
 esp_err_t wifi_drv_scan(wifi_ap_record_t **ap_list, uint16_t *ap_num);
 
-// 切换WiFi模式
+// 切换WiFi模式{WIFI_MODE_APSTA WIFI_MODE_STA WIFI_MODE_AP WIFI_MODE_NULL}
 esp_err_t wifi_drv_set_mode(wifi_mode_t mode);
 
 // 保存WiFi信息到NVS

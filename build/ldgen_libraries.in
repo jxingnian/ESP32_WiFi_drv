@@ -85,3 +85,5 @@ $<TARGET_FILE:__idf_wifi_drv>
 $<TARGET_FILE:__idf_spiffs_mgr>
 $<TARGET_FILE:__idf_web_prov>
 $<TARGET_FILE:__idf_main>
+$<TARGET_FILE:__idf_inmp441>
+$<TARGET_FILE:__idf_max98357a>
